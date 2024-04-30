@@ -60,6 +60,7 @@ function checkWinner() {
         roundWon = true;
         break;
     }
+  }
   // Verificar se estão reunidas as condições para haver um vencedor
 
   if (roundWon) {
@@ -77,4 +78,4 @@ function restartGame() {
   statusText.textContent = `É a vez do ${currentPlayer}`;
   cells.forEach((cell) => (cell.textContent = ''));
   running = true;
-}}
+}
